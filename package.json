@@ -29,6 +29,7 @@
     "semantic-ui-react": "^0.88.2",
     "social-media-icons-react": "^1.0.10"
   },
+  "main": "index.js",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
