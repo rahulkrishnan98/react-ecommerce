@@ -7,12 +7,13 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavbarBrand from 'react-bootstrap/NavbarBrand';
 import { FaIdCard, FaAdobe } from "react-icons/fa";
-
+import { FiShoppingCart } from "react-icons/fi";
 
 import Footer from './components/footer'
 import FlyersPage from './pages/FlyersPage';
 import CardsPage from './pages/CardsPage';
 import HomePage from './pages/Homepage';
+import CartPage from './pages/CartPage'
 import logo from './assets/images/logo_2.png'
 
 class App extends React.Component {
@@ -47,12 +48,15 @@ class App extends React.Component {
                 <Link class="nav-link" to="/">Home</Link>
                 <Link class="nav-link" to="/cards">Cards <FaIdCard /></Link>
                 <Link class="nav-link" to="/flyers">Flyers <FaAdobe /></Link>
+                <Link class="nav-link" to="/cart"><FiShoppingCart /></Link>
+
               </Nav>
             </Navbar.Collapse>
           </Navbar>
           <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} info_printing={this.state.home.info_printing} info_about={this.state.home.info_about} info_support={this.state.home.info_support} info_newsletter={this.state.home.info_newsletter} />} />
           <Route path="/cards" render={() => <CardsPage />} />
           <Route path="/flyers" render={() => <FlyersPage />} />
+          <Route path="/cart" render={() => <CartPage />} />
           <Footer />
         </Container>
       </Router>

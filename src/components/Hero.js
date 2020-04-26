@@ -7,8 +7,6 @@ import Button from 'react-bootstrap/Button';
 import 'react-awesome-button/dist/themes/theme-blue.css';
 import {
     AwesomeButton,
-    AwesomeButtonProgress,
-    AwesomeButtonSocial,
 } from 'react-awesome-button';
 function Hero(props) {
     return (
@@ -22,7 +20,7 @@ function Hero(props) {
                         <h3 className="lead font-weight-light">From business cards, letterheads and compliment slips to flyers,<br></br> posters
                         and roller banners, all prices include delivery to mainland India*
                         </h3>
-                        <AwesomeButton type="secondary" style={{ fontSize: "20px" }}>Start Printing</AwesomeButton>
+                        <AwesomeButton type="secondary">Start Printing</AwesomeButton>
                         {' '}
                     </Col>
                 </Row>
