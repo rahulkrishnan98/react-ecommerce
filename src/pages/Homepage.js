@@ -30,9 +30,8 @@ function HomePage(props) {
                     <Col md={{ span: 4 }} style={{ textAlign: "centre" }}>
                         <img style={{ width: "100%" }} src={helper} alt="design" />
                         <h3 className="lead font-weight-light" style={{ paddingLeft: "20px", paddingTop: "25px" }}> Designed to streamline your print needs</h3>
-                        <p className="font-weight-light" style={{ margin: "15px", textAlign: "justify" }}>
-                            We’ve prepared a guide for you to get your artwork print ready with minimum faffing around.
-                            Simply place your order and send your artwork for proof.
+                        <p className="font-weight-light" style={{ margin: "15px", textAlign: "centre" }}>
+                            We’ve prepared a guide for you to get your artwork print ready. Simply place your order and send your artwork for proof.
                             Your order will then be delivered within 4 to 5 days from sign off.
                             <AwesomeButton style={{ marginLeft: "35%", marginTop: "5%" }} type="secondary">Start Printing</AwesomeButton>
                             {' '}
@@ -57,3 +56,4 @@ function HomePage(props) {
     );
 }
 export default HomePage;
+

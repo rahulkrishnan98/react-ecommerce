@@ -40,13 +40,13 @@ const FormPage = (props) => {
 
             <Form.Row>
                 <Form.Group as={Col} controlId="formGridCity">
-                    <Form.Label>City</Form.Label>
-                    <Form.Control style={{ border: '0', borderBottom: '1px solid lightgray' }} />
+                    <Form.Label></Form.Label>
+                    <Form.Control placeholder="City" style={{ border: '0', borderBottom: '1px solid lightgray' }} />
                 </Form.Group>
 
                 <Form.Group as={Col} controlId="formGridState">
-                    <Form.Label>State</Form.Label>
-                    <Form.Control as="select" value="Choose..." style={{ border: '0', borderBottom: '1px solid lightgray' }} >
+                    <Form.Label></Form.Label>
+                    <Form.Control placeholder="Special Delivery Instructions" as="select" value="Choose..." style={{ border: '0', borderBottom: '1px solid lightgray' }} >
                         <option>Tamil Nadu</option>
                         <option>Kerala</option>
                         <option>Gujarat</option>
@@ -54,8 +54,8 @@ const FormPage = (props) => {
                 </Form.Group>
 
                 <Form.Group as={Col} controlId="formGridZip">
-                    <Form.Label>Zip</Form.Label>
-                    <Form.Control style={{ border: '0', borderBottom: '1px solid lightgray' }} />
+                    <Form.Label></Form.Label>
+                    <Form.Control placeholder="Zip" style={{ border: '0', borderBottom: '1px solid lightgray' }} />
                 </Form.Group>
             </Form.Row>
             <AwesomeButton type="secondary">Proceed to Pay</AwesomeButton>

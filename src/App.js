@@ -7,7 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavbarBrand from 'react-bootstrap/NavbarBrand';
 import { FaIdCard, FaAdobe } from "react-icons/fa";
-
+import { FiShoppingCart } from "react-icons/fi";
 
 import Footer from './components/footer'
 import FlyersPage from './pages/FlyersPage';
@@ -48,7 +48,8 @@ class App extends React.Component {
                 <Link class="nav-link" to="/">Home</Link>
                 <Link class="nav-link" to="/cards">Cards <FaIdCard /></Link>
                 <Link class="nav-link" to="/flyers">Flyers <FaAdobe /></Link>
-                <Link class="nav-link" to="/cart">Cart</Link>
+                <Link class="nav-link" to="/cart"><FiShoppingCart /></Link>
+
               </Nav>
             </Navbar.Collapse>
           </Navbar>
